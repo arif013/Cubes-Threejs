@@ -1,5 +1,4 @@
-import { Raycaster } from "three";
-import App from "./App";
+import App from "./App.js";
 import * as THREE from 'three'
 import * as TWEEN from '@tweenjs/tween.js'
 

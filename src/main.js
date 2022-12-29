@@ -1,4 +1,4 @@
-import App from "./App"
+import App from "./App.js"
 import RaycastScene from "./RaycastScene";
 import './style.css'
 
