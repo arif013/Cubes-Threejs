@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from "../node_modules/three/build/three.module"
 import * as TWEEN from '@tweenjs/tween.js';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import {TransformControls} from 'three/examples/jsm/controls/TransformControls';
