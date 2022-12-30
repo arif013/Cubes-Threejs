@@ -1,6 +1,6 @@
 import App from "./App.js";
 import * as THREE from '../node_modules/three/build/three.module.js'
-import * as TWEEN from '@tweenjs/tween.js'
+import { TWEEN } from 'three/examples/jsm/libs/tween.module.min'
 
 export default class RaycastScene extends App{
     
