@@ -1,7 +1,7 @@
 import * as THREE from "../node_modules/three/build/three.module"
-import { TWEEN } from '../node_modules/three/examples/jsm/libs/tween.module.min'
-import {OrbitControls} from '../node_modules/three/examples/jsm/controls/OrbitControls';
-import {TransformControls} from '../node_modules/three/examples/jsm/controls/TransformControls';
+import * as TWEEN from '@tweenjs/tween.js';
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
+import {TransformControls} from 'three/examples/jsm/controls/TransformControls';
 import dat from 'dat.gui'
 
 export default class App{
