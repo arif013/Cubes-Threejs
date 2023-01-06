@@ -1,5 +1,5 @@
 import App from "./App.js";
-import * as THREE from '../node_modules/three/build/three.module.js'
+import * as THREE from 'three'
 import * as TWEEN from '@tweenjs/tween.js'
 
 export default class RaycastScene extends App{
@@ -28,14 +28,16 @@ export default class RaycastScene extends App{
 
         for(let obj of intersect){
             // For dynamic color while hovering
-            let maxVal = 0xFFFFFF; 
-            let randomNumber = Math. random() * maxVal;
-            randomNumber = Math. floor(randomNumber);
-            randomNumber = randomNumber. toString(16);
-            let randColor = randomNumber. padStart(6, 0);
-            let color = `#${randColor. toUpperCase()}`
-            obj.object.material.color.set(color)
+            // let maxVal = 0xFFFFFF; 
+            // let randomNumber = Math. random() * maxVal;
+            // randomNumber = Math. floor(randomNumber);
+            // randomNumber = randomNumber. toString(16);
+            // let randColor = randomNumber. padStart(6, 0);
+            // let color = `#${randColor. toUpperCase()}`
+            // obj.object.material.color.set(color)
             
+            obj.object.material.color.set(0xFF0000)
+
             // For Tween motion
             const tween1 = new TWEEN.Tween(obj.object.position).to({x: Math.random()*100-50, y:Math.random()*100-50, z:Math.random()*100-50},4000).easing(TWEEN.Easing.Quadratic.InOut)
             
